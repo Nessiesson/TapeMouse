@@ -83,7 +83,6 @@ public class ClientEventHandler
     @SubscribeEvent(priority = HIGHEST)
     public void chatEvent(ClientChatEvent event)
     {
-        LOGGER.info("blapdsf");
         if (!event.getMessage().startsWith("!tapemouse")) return;
         LOGGER.info("{}", event.getMessage());
         event.setCanceled(true);
