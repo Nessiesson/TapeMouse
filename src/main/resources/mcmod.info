@@ -6,7 +6,7 @@
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "https://github.com/dries007/TapeMouse",
-  "updateUrl": "https://mc.dries007.net/TapeMouse.json",
+  "updateUrl": "",
   "authors": ["Dries007"],
   "credits": "",
   "logoFile": "",

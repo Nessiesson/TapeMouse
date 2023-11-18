@@ -3,7 +3,7 @@ buildscript {
         jcenter()
         maven {
             name = "forge"
-            url = "http://files.minecraftforge.net/maven"
+            url = "https://files.minecraftforge.net/maven"
         }
         maven {
             name = "sonatype"
@@ -11,7 +11,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+        classpath files('forgegradle/ForgeGradle-2.1.2.jar')
         classpath group: 'com.github.rodionmoiseev.gradle.plugins', name: 'idea-utils', version: '0.2'
     }
 }
@@ -38,9 +38,9 @@ compileJava {
 
 archivesBaseName = 'TapeMouse'
 minecraft {
-    version = "1.12.2-14.23.0.2491"
+    version = "1.8.9-11.15.1.2318-1.8.9"
     runDir = "run"
-    mappings = "snapshot_20171017"
+    mappings = "stable_22"
 }
 if (System.getenv().BUILD_NUMBER != null) version += "." + System.getenv().BUILD_NUMBER
 

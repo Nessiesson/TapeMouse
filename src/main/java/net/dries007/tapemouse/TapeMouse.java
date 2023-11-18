@@ -41,16 +41,16 @@ public class TapeMouse
         if (keyBinding == null) return;
         if (Minecraft.getMinecraft().currentScreen instanceof GuiMainMenu)
         {
-            event.getLeft().add(NAME + " paused. Main menu open. If you want to AFK, use ALT+TAB.");
+            event.left.add(NAME + " paused. Main menu open. If you want to AFK, use ALT+TAB.");
         }
         else if (Minecraft.getMinecraft().currentScreen instanceof GuiChat)
         {
-            event.getLeft().add(NAME + " paused. Chat GUI open. If you want to AFK, use ALT+TAB.");
+            event.left.add(NAME + " paused. Chat GUI open. If you want to AFK, use ALT+TAB.");
         }
         else
         {
-            event.getLeft().add(NAME + " active: " + keyBinding.getDisplayName() + " (" + keyBinding.getKeyDescription().replaceFirst("^key\\.", "") + ')');
-            event.getLeft().add("Delay: " + i + " / " + delay);
+            event.left.add(NAME + " active: " + keyBinding.getKeyDescription() + " (" + keyBinding.getKeyDescription().replaceFirst("^key\\.", "") + ')');
+            event.left.add("Delay: " + i + " / " + delay);
         }
     }
 
